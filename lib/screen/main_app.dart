@@ -6,7 +6,11 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: '1Cak Clone',
-      theme: ThemeData.dark(),
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        primaryColor: Colors.black,
+        secondaryHeaderColor: Colors.black38,
+      ),
       home: HomeScreen(),
     );
   }
